@@ -1,14 +1,19 @@
+import kotlin.math.sin
+
 fun main() {
 
 arrNums(arrayOf(21,17,42,45,12))
     volume(5.9)
+  isPalindrome(arrayOf("madam, wow, kayak "))
+    printOut(arrayOf("Barnie bakes brown bagels and buns"))
 }
 //Write and invoke a function that given the string “Barnie bakes brown bagels
 //and buns” prints out a list of all the other words and characters making up the
 //string excluding all possible occurrences of the letter b.
 
-fun printOut(word:String){
-    println("Barnie bakes brown bagels and buns ")
+fun printOut(wordArray: Array<String>){
+    var word = wordArray.asList()
+    println(word)
 }
 
 //Write and invoke one function that takes in an array of integers and returns
@@ -20,7 +25,7 @@ fun arrNums(array: Array<Int>){
     var countElement = array.count()
     println(countElement)
      var ave = array.average()
-    println(ave.toDouble())
+    println(ave)
 }
 //The volume of a sphere is calculated using the formula below
 //V = 4/3 π r
@@ -39,3 +44,13 @@ fun volume(radius:Double){
 //that takes in a single word and returns true or false depending on whether the
 //word is a palindrome.
 
+
+fun isPalindrome(wordArray: Array<String>):Boolean{
+     var check = wordArray
+
+    if ( wordArray == check){ (isPalindrome(arrayOf("madam, wow, kayak")) )
+    }
+
+    return false
+
+}
