@@ -1,5 +1,3 @@
-import kotlin.math.sin
-
 fun main() {
 
     arrNums(arrayOf(21,17,42,45,12))
@@ -13,8 +11,9 @@ fun main() {
 
 fun printOut(wordArray: Array<String>){
  for (word in wordArray) {
-     println(word)
+     word.replace("b " ," ")
     }
+println(wordArray.contentToString())
 }
 
 
@@ -50,9 +49,13 @@ fun volume(radius:Double){
 fun isPalindrome(wordArray: Array<String>):Boolean{
      var check = wordArray
 
-    if ( wordArray == check){ (isPalindrome(arrayOf("madam, wow, kayak")) )
+    if ( wordArray == check)
+    { (isPalindrome(arrayOf("madam, wow, kayak")) )
+    } else {
+        return false
     }
-
     return false
+
+
 
 }
