@@ -4,7 +4,7 @@ fun main() {
 
     arrNums(arrayOf(21,17,42,45,12))
     volume(5.9)
-//    isPalindrome(arrayOf("madam, wow, kayak "))
+   isPalindrome(arrayOf("madam, wow, kayak "))
     printOut(arrayOf("Barnie bakes brown bagels and buns"))
 }
 //Write and invoke a function that given the string “Barnie bakes brown bagels
@@ -47,12 +47,12 @@ fun volume(radius:Double){
 //word is a palindrome.
 
 
-//fun isPalindrome(wordArray: Array<String>):Boolean{
-//     var check = wordArray
-//
-//    if ( wordArray == check){ (isPalindrome(arrayOf("madam, wow, kayak")) )
-//    }
-//
-//    return false
-//
-//}
+fun isPalindrome(wordArray: Array<String>):Boolean{
+     var check = wordArray
+
+    if ( wordArray == check){ (isPalindrome(arrayOf("madam, wow, kayak")) )
+    }
+
+    return false
+
+}
